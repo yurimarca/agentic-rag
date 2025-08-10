@@ -74,4 +74,4 @@ This will print the answer to the question "What is agent memory?".
 
 ## Testing
 
-The project includes unit tests for the chains in [src/graph/chains/tests/test_chains.py](src/graph/chains/tests/test_chains.py). To run
+The project includes unit tests for the chains in [src/graph/chains/tests/test_chains.py](src/graph/chains/tests/test_chains.py). To run the tests, use `pytest . -s -v`.
