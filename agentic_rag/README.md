@@ -159,24 +159,3 @@ agentic_rag/
 ├── graph.png                  # Workflow visualization
 └── .env                       # Environment variables
 ```
-
-## 🔧 Configuration
-
-### Document Sources
-Currently configured to ingest from Lilian Weng's AI blog posts. Modify URLs in `ingestion.py`:
-```python
-urls = [
-    "https://your-domain.com/article1",
-    "https://your-domain.com/article2",
-    # Add more URLs as needed
-]
-```
-
-### Chunk Size & Overlap
-Adjust text splitting parameters in `ingestion.py`:
-```python
-text_splitter = RecursiveCharacterTextSplitter.from_tiktoken_encoder(
-    chunk_size=250,    # Tokens per chunk
-    chunk_overlap=0    # Overlap between chunks
-)
-```
